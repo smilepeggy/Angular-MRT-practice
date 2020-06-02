@@ -9,4 +9,7 @@ import { stationList } from './station-list.const';
 export class AppComponent {
   title = 'Angular-MRT-practice';
   list = stationList;
+  birthday = new Date(1988, 3, 15); // April 15, 1988
+  color: string;
+  condition: false;
 }
