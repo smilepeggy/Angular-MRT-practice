@@ -1,0 +1,51 @@
+/* HeroesComponent's private CSS styles */
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.heroes li {
+  cursor: pointer; // 滑鼠標示
+  position: relative;
+  left: 0;
+  background-color: #babd82;
+  margin: .5em; // = 16px*0.5em=4.8px
+  padding: .3em 0; // 上下0.3em 左右0
+  height: 1.6em;
+  border-radius: 4px; // 修圓角
+}
+.heroes li:hover { // hover 滑鼠滑過
+  color: #b9c2c5;
+  background-color: #2a3e5d;
+  left: .5em;
+}
+.heroes li.selected {
+  background-color: #CFD8DC;
+  color: white;
+}
+.heroes li.selected:hover {
+  background-color: #bd655a;
+  color: white;
+}
+.heroes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em; // 上右下左
+  background-color:#405061;
+  line-height: 1em;
+  position: relative;
+  // left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/
