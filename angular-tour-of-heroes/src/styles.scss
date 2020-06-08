@@ -18,7 +18,7 @@ body, input[text], button {
 }
 a {
   cursor: pointer;
-  cursor: hand;
+  // cursor: hand;
 }
 button {
   font-family: Arial;
@@ -27,16 +27,16 @@ button {
   padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer;
-  cursor: hand;
+  // cursor: hand;
 }
 button:hover {
   background-color: #cfd8dc;
 }
-button:disabled {
-  background-color: #eee;
-  color: #aaa;
-  cursor: auto;
-}
+// button:disabled {
+//   background-color: #eee;
+//   color: #aaa;
+//   cursor: auto;
+// }
 
 /* Navigation link styles */
 nav a {
