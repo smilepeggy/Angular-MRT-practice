@@ -39,5 +39,22 @@ export class HeroesComponent implements OnInit {
     });
   }
 
+  add(name: string): void {
+    name = name.trim();
+    console.log(name.trim()); // 刪除兩端空白格
+    if (!name) {
+      return;
+    }
+    this.heroService.addHero({ name } as Hero).subscribe(hero => {
+      this.heroes.push(hero);
+    });
+  }
+  delete(hero: Hero): void {
+    this.heroes = this.heroes.filter(h => h !== hero); // 留下非hero
+    console.log(this.heroes);
+    this.heroService.deleteHero(hero).subscribe(); // 要subscribe才會從service上消失
+    console.log('delete');
+  }
+
 
 }
